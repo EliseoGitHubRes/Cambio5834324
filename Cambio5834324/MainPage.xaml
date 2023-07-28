@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cambio5834324.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+            <Label Text="CAMBIO CLIENTE" 
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               TextColor="MediumPurple"/>
+
+            <Image Source="cambio.png"
+                   HeightRequest="200"
+                   WidthRequest="300"
+                   HorizontalOptions="Center"/>
+            <Label Text="Digite costo del articulo"
+               FontSize="15"/>
+            <Entry x:Name="costoArt" Placeholder="Costo Articulo"
+               Keyboard="Numeric"/>
+
+            <Label Text="Digite dinero entregado por el cliente"
+               FontSize="15"/>
+            <Entry x:Name="dinerocli" Placeholder="Dinero cliente"
+               Keyboard="Numeric"/>
+
+            <Label Text="El cambio es: "
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               TextColor="MediumPurple"
+               FontSize="18"
+               x:Name="cambioCli"/>
+
+            <Button Text="Calcular Cambio"
+                BackgroundColor="White"
+                BorderColor="MediumPurple"
+                BorderWidth="3"
+                CornerRadius="30"
+                Clicked="Button_Clicked"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
